@@ -1,17 +1,13 @@
 var operatorSign = '';
 var calculator = document.querySelector('section');
-// var numberValue;
-// var numberString = '';
 var buttonClick;
 var number1 = '';
 var number2 = '';
-// var equalSign = document.querySelector('.evaluate');
-// var number1 = document.querySelectorAll('.number').value;
 
-
-//targets text that was clicked//
 calculator.addEventListener('click', function(evt) {
     buttonClick = evt.target.innerText;
+    //targets text that was clicked//
+
     if (operatorSign === '' && number1 === '') {
         number1 = buttonClick;
         //number1 is defined because operatorSign is empty so it recognizes that it is the first number clicked.
